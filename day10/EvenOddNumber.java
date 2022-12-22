@@ -1,0 +1,27 @@
+package day10;
+
+import util.InputFromUser;
+
+public class EvenOddNumber {
+	public static void main(String[] args) {
+
+		String numStr = InputFromUser.getInput("Enter number:");
+		int number = Integer.parseInt(numStr);
+
+		if (number % 2 == 0) {
+
+			System.out.println(number + " is even");
+		} else {
+			System.out.println(number + " is odd");
+		}
+	}
+
+	public static void bigNumber(int number) {
+		if (number > 1000) {
+			System.out.println(number + " big number");
+		} else {
+			System.out.println(number + " regular number");
+		}
+
+	}
+}
